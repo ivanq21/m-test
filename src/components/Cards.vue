@@ -86,6 +86,10 @@ export default {
         border-top-right-radius: 24px;
     }
 
+    &:nth-child(5) {
+        border-bottom-left-radius: 24px;
+    }
+
     &__head {
         display: flex;
         justify-content: space-between;
@@ -131,6 +135,7 @@ export default {
             border-top-right-radius: 24px;
         }
 
+        &:nth-child(5),
         &:nth-child(4) {
             border-radius: 0;
         }
@@ -142,8 +147,7 @@ export default {
         max-width: unset;
 
         &:nth-child(3) {
-            border-top-right-radius: 0;
-            border-bottom-left-radius: 24px;
+            border-radius: 0;
         }
 
         &:nth-child(2) {
