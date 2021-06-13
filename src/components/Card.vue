@@ -44,11 +44,9 @@ export default {
     .card {
         display: flex;
         flex-direction: column;
-        width: 25%;
         max-width: 260px;
         height: 380px;
         padding: 32px;
-        margin: 0 0 20px 20px;
         border: 1px solid #5540CC;
         background-repeat:  no-repeat;
         background-position: bottom right;
@@ -112,8 +110,7 @@ export default {
         @media screen and (max-width: 1200px) {
             border-radius: 0;
             padding: 24px;
-            max-width: 260px;
-            min-width: calc(33% - 20px);
+            max-width: unset;
 
             &:nth-child(7) {
                 border-top-right-radius: 0;
@@ -132,8 +129,6 @@ export default {
 
         @media screen and (max-width: 768px) {
             border-radius: 0;
-            min-width: calc(50% - 20px);
-            max-width: unset;
 
             &:nth-child(3) {
                 border-radius: 0;
@@ -145,7 +140,9 @@ export default {
         }
 
         @media screen and (max-width: 480px) {
-            width: 100%;
+            &:nth-child(2) {
+                border-radius: 0;
+            }
         }
     }
 </style>

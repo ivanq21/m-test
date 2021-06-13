@@ -26,8 +26,21 @@ export default {
 </script>
 <style lang="scss" scoped>
     .cards {
-        display: flex;
-        flex-wrap: wrap;
-        margin-left: -20px;
+        display: grid;
+        gap: 20px;
+        grid-template-areas: '. . . .';
+
+        @media screen and (max-width: 1200px) {
+            grid-template-areas: '. . .';
+        }
+
+        @media screen and (max-width: 768px) {
+            grid-template-areas: '. .';
+        }
+
+        @media screen and (max-width: 480px) {
+            grid-template-areas: '.';
+        }
     }
+
 </style>
