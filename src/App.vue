@@ -104,11 +104,10 @@ const cardsData = [
     },
     {
         id: 'mail_cloud',
-        title: '',
-        subtitle: 'Скоро на платформе Mail.Ru Cloud Solutions появятся новые сервисы',
+        title: 'Cloud Solutions',
+        subtitle: 'Скоро на платформе Cloud Solutions появятся новые сервисы',
         bg_img: '',
-        logo: logo,
-        icon: '',
+        icon: logo,
         btn_text: 'Быть в курсе',
     },
 ]

@@ -5,8 +5,7 @@
         :style="{ backgroundImage: 'url(' + card.bg_img + ')' }"
     >
         <div class="card__head">
-            <img v-if="card.logo" :src="card.logo" alt="">
-            <div v-else class="card__title">{{card.title}}</div>
+            <div class="card__title">{{card.title}}</div>
             <div class="card__icon" :style="{ backgroundImage: 'url(' + card.icon + ')' }"></div>
         </div>
         <div class="card__description">
